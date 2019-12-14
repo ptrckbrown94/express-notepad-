@@ -3,8 +3,8 @@
 const express = require("express");
 const path = require("path");
 
-// linking css
-const 
+const index = require("notes");
+const note2 = require("index");
 
 // Sets up the Express App
 
