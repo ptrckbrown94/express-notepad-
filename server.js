@@ -2,6 +2,7 @@
 
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 
 // Sets up the Express App
 
@@ -25,6 +26,11 @@ app.get("/", function(req, res) {
 // Displays notes
 app.get("/api/notes", function(req, res) {
   return res.json(notes);
+});
+
+//save notes
+app.post("/api/notes", function(){
+
 });
 // Displays a single character, or returns false
 app.get("/api/notes/:notes", function(req, res) {
