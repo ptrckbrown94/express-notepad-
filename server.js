@@ -3,9 +3,6 @@
 const express = require("express");
 const path = require("path");
 
-const index = require("notes");
-const note2 = require("index");
-
 // Sets up the Express App
 
 const app = express();
@@ -13,28 +10,18 @@ const PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// array to hold the notes (DATA)
 
-const notes = [
-  {
-    
-  },
-  {
- 
-  },
-  {
+app.use(express.static("public"));
 
-  }
-];
 // Routes
-// =============================================================
+
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
-app.get("/notes", function(req, res) {
   res.sendFile(path.join(__dirname, "notes.html"));
 });
+//app.get("*", function(req, res) {
+//  res.sendFile(path.join(__dirname, "index.html"));
+//});
 // Displays notes
 app.get("/api/notes", function(req, res) {
   return res.json(notes);
@@ -51,7 +38,7 @@ app.get("/api/notes/:notes", function(req, res) {
   return res.json(false);
 });
 // Create New Characters - takes in JSON input
-app.post("/api/characters", function(req, res) {
+app.post("/api/notes", function(req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
   const newNote = req.body;
