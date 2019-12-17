@@ -32,8 +32,15 @@ app.get("/api/notes", function(req, res) {
 });
 
 //save notes
-app.post("/api/notes", function(){
 
+const db = require("db.json");
+
+app.post("/api/notes", function(req, res){ //req.body === the stuff from the front end
+  console.log(req.body)
+  const newArray = [...db, req.body]
+  fs.writeFile("db.json", newArray, (err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
 });
 // // Displays a single character, or returns false
 // app.get("/api/notes/:notes", function(req, res) {
