@@ -17,7 +17,7 @@ I created this project from the outline given to us by our Triology Education Se
 I built this application with the help from my instructor and TAs from Triology. I also had addditoinal help from my classmates and tutors. 
 
 ## Challenges
-I found this whole activity to be challanging. I had never saved anything to a database.  I struggle with using documentation to figure out the problem at hand, expectional when its a language that I'm not familiar with. 
+I found this whole activity to be challanging. I had never saved anything to a database.  I struggled with using documentation to figure out to delete a note. Once I was able to find the documentation I had a hard time deciding between the two options that seemed best. 
 
 ## Live Site
 https://ptrckbrown94.github.io/express-notepad-/
