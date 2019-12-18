@@ -20,7 +20,7 @@ I built this application with the help from my instructor and TAs from Triology.
 I found this whole activity to be challanging. I had never saved anything to a database.  I struggled with using documentation to figure out to delete a note. Once I was able to find the documentation I had a hard time deciding between the two options that seemed best. 
 
 ## Live Site
-https://ptrckbrown94.github.io/express-notepad-/
+https://patrick-express-note-taker.herokuapp.com/
 
 ## Screenshots
 ![image]()
