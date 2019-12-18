@@ -32,30 +32,49 @@ app.get("/api/notes", function (req, res) {
 
 //save notes
 
-
 app.post("/api/notes", function (req, res) { //req.body === the stuff from the front end
-let db;
-let newNote = req.body;
+  let db;
+  let newNote = req.body;
 
   fs.readFile("db.json", "utf8", function (err, notes) {
     db = JSON.parse(notes)
     combineNewWithOld();
   });
-  
-  // console.log("db" + db)
-  console.log(newNote)
-function combineNewWithOld(){
 
-  db.push(newNote)
-  console.log(db)
-  fs.writeFile("db.json", JSON.stringify(db), (err) => {
-    
-    if (err) throw err;
-    console.log('The file has been saved!');
-    res.sendfile(path.join(__dirname,"db.json"));
-  });
-}
+
+  console.log(newNote)
+  function combineNewWithOld() {
+
+    db.push(newNote)
+    console.log(db)
+    fs.writeFile("db.json", JSON.stringify(db), (err) => {
+
+      if (err) throw err;
+      console.log('The file has been saved!');
+      res.sendfile(path.join(__dirname, "db.json"));
+    });
+  }
 })
+
+
+
+//delete note function
+
+
+app.delete("/api/notes/:id", function (req, res) {
+  id = (req.params.id)
+
+  fs.readFile("db.json", "utf8", function (err, notes) {
+    db = JSON.parse(notes)
+    combineNewWithOld();
+  
+  
+  });
+
+}
+
+
+
 // // Displays a single character, or returns false
 // app.get("/api/notes/:notes", function(req, res) {
 //   const chosen = req.params.notes;
@@ -70,7 +89,7 @@ function combineNewWithOld(){
 // });
 
 // Starts the server to begin listening
-// =============================================================
+
 app.listen(PORT, function () {
   console.log("App listening on PORT " + PORT);
 })

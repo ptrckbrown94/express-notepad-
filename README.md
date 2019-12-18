@@ -1,24 +1,23 @@
 # express-notepad-
-# Team-Profile-Generator
 
 ## Description 
-This application would be used to help generate a roster of employees for a project. 
+I Created an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 
 ## Installation 
-If all the files are kept in a single fold and the user installs jest and inquirer the user should be able to build an employee team with a manager, engineers and interns.  
+If all the files are kept in a single fold and the user uses the server.js file to run the program in the terminal 
 
 ## Usage
-The usage was to continue building our skills wit node.js and using the terminal. The we also had to use the following resources: [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. 
+The usage was to continue building our skills wit node.js, using the terminal and working with express to complete the backend. 
 
 ## Credit
-I created this project from the outline given to us by our Triology Education Services instructor. I also took code from my old homework, inclasss activities. My instructor and TAs also  gave me guidance while working on thsi project. . I had additional help from my tutors Isabel Arcones and Andy Gikling. 
+I created this project from the outline given to us by our Triology Education Services instructor. I also took code from my old homework, inclasss activities. My instructor and TAs also  gave me guidance while working on thsi project. . I had additional help from my tutors Isabel Arcones and Andy Gikling. Most of the front end was already completed for me. I only had to fix a few small portions. 
 
 ## Contributing 
 I built this application with the help from my instructor and TAs from Triology. I also had addditoinal help from my classmates and tutors. 
 
 ## Challenges
-I had issues with my for loop and using inquirer. The for loop was running while I was trying to answer the questions about job title. The loop would continue to run before I could answer the questions. I was not able to fix this issue. Because of this "bug" I was not able to finish the homework in time.  
+I found this whole activity to be challanging. I had never saved anything to a database.  I struggle with using documentation to figure out the problem at hand, expectional when its a language that I'm not familiar with. 
 
 ## Live Site
 https://ptrckbrown94.github.io/express-notepad-/
